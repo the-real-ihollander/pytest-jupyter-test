@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="7" skipped="0" tests="7" time="0.564" timestamp="2021-12-03T17:32:11.395687" hostname="Ians-MacBook-Pro.local"><testcase classname="pytests.test_index" name="test_italy" time="0.001"><failure message="AssertionError: assert None == 'Italy'">def test_italy():
+&gt;       assert italy == 'Italy'
+E       AssertionError: assert None == 'Italy'
+
+pytests/test_index.py:10: AssertionError</failure></testcase><testcase classname="pytests.test_index" name="test_mexico" time="0.001"><failure message="AssertionError: assert None == 'Mexico'">def test_mexico():
+&gt;       assert mexico == 'Mexico'
+E       AssertionError: assert None == 'Mexico'
+
+pytests/test_index.py:13: AssertionError</failure></testcase><testcase classname="pytests.test_index" name="test_kindof_neighbors" time="0.001"><failure message="AssertionError: assert None == ['USA', 'Argentina', 'Mexico', 'USA']">def test_kindof_neighbors():
+&gt;       assert kindof_neighbors == ['USA', 'Argentina', 'Mexico', 'USA']
+E       AssertionError: assert None == ['USA', 'Argentina', 'Mexico', 'USA']
+
+pytests/test_index.py:16: AssertionError</failure></testcase><testcase classname="pytests.test_index" name="test_malta_presence" time="0.001"><failure message="AssertionError: assert 'Malta' in ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', ...]">def test_malta_presence():
+&gt;       assert 'Malta' in countries
+E       AssertionError: assert 'Malta' in ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', ...]
+
+pytests/test_index.py:19: AssertionError</failure></testcase><testcase classname="pytests.test_index" name="test_new_mexico_presence" time="0.001"><failure message="AssertionError: assert 'New Mexico' not in ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', ...]">def test_new_mexico_presence():
+&gt;       assert 'New Mexico' not in countries
+E       AssertionError: assert 'New Mexico' not in ['Croatia', 'USA', 'Argentina', 'Mexico', 'USA', 'Morocco', ...]
+
+pytests/test_index.py:22: AssertionError</failure></testcase><testcase classname="pytests.test_index" name="test_unique_countries" time="0.001"><failure message="TypeError: 'NoneType' object is not iterable">def test_unique_countries():
+&gt;       assert sorted(['Argentina', 'Canada', 'Croatia', 'Finland', 'Italy', 'Malta', 'Mexico', 'Morocco', 'South Korea', 'USA']) == sorted(unique_countries)
+E       TypeError: 'NoneType' object is not iterable
+
+pytests/test_index.py:25: TypeError</failure></testcase><testcase classname="pytests.test_index" name="test_num_repeats" time="0.001"><failure message="assert None == 3">def test_num_repeats():
+&gt;       assert num_of_repeats == 3
+E       assert None == 3
+
+pytests/test_index.py:28: AssertionError</failure></testcase></testsuite></testsuites>
